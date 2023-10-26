@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  laravel:
+    build: .
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    #   - ./docker/docker.env:/var/www/.env
+    ports:
+      - "8000:8000"
